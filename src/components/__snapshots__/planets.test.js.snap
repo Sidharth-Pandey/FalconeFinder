@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Planest/> test cases should match the snapshot 1`] = `"<select class=\\"planet\\" id=\\"0\\"><option>select</option><option value=\\"Donlon\\">Donlon </option><option value=\\"Enchai\\">Enchai </option><option value=\\"Jebing\\">Jebing </option><option value=\\"Sapir\\">Sapir </option><option value=\\"Lerbin\\">Lerbin </option><option value=\\"Pingasor\\">Pingasor </option></select>"`;

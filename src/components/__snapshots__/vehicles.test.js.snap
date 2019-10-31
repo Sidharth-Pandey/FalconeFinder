@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Vehicles/> test cases should match the snapshot 1`] = `"<div class=\\"vehicleList\\"><div class=\\"\\"><input type=\\"radio\\" name=\\"0\\" id=\\"0\\" value=\\"Space pod\\"/><label>Space pod(2)</label></div><div class=\\"\\"><input type=\\"radio\\" name=\\"0\\" id=\\"0\\" value=\\"Space rocket\\"/><label>Space rocket(1)</label></div><div class=\\"\\"><input type=\\"radio\\" name=\\"0\\" id=\\"0\\" value=\\"Space shuttle\\"/><label>Space shuttle(1)</label></div><div class=\\"\\"><input type=\\"radio\\" name=\\"0\\" id=\\"0\\" value=\\"Space ship\\"/><label>Space ship(2)</label></div></div>"`;
