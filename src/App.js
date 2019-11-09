@@ -2,7 +2,7 @@ import React from 'react';
 import {Component} from 'react';
 import './App.css';
 import PlanetVehicleGroup from './components/PlanetVehicleGroup';
-import ErrorPopUp from './components/ErrorPopup'
+import ErrorPopUp from './components/ErrorPopup';
 import postData from './utils/postUtil'
 
 
@@ -243,20 +243,35 @@ class App extends Component {
       });
       return (
         <>
-        <div className="App">
-          <div className = "App-header">
-            <label> Find FalCone !</label>
-          </div>
-          <h2>Select planets you want to search in:</h2>
-          <div className= "planetContainer">
-            {planetVehicleElement}
-            <div className="timeContainer">
-              <label>Total Time:</label>
-              <label id= "totalTime">{this.state.totalTimeTaken}</label>
+        <div className="App container-fluid">
+          <div className = "row">
+            <div className="col-md-12">
+              <nav className = "navbar bg-dark fixed-top"></nav>
             </div>
           </div>
-          <button disabled={!(this.isSelectionComplete())} onClick= {this.findFalcone}>Find FalCone</button>
-          <div className = "App-footer"></div>
+          <div className = "row">
+            <div className="col-md-12 text-center">
+              <h2> Find FalCone !</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-12 my-auto">
+              <h4 className="text-center">Select planets you want to search in:</h4>
+            </div>
+          </div>
+            <div className= "planetContainer row justify-content-center">
+              {planetVehicleElement}
+              <div className="timeContainer col-md-2">
+                <label>Total Time:</label>
+                <label id= "totalTime">{this.state.totalTimeTaken}</label>
+              </div>
+            </div>
+            <div className = "row">
+              <div className = "col text-center">
+            <button className="btn btn-primary" disabled={!(this.isSelectionComplete())} onClick= {this.findFalcone}>Find FalCone</button>
+              </div>
+          </div>
+          <nav className = "navbar bg-dark fixed-bottom"></nav>
         </div>
         {(this.state.showErrorPopUp) ?
           <ErrorPopUp handleClosePopup= {this.handleClosePopup} errorMessage={this.state.errorMessage}></ErrorPopUp>

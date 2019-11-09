@@ -1,101 +1,40 @@
+
 .App, .result {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%
+  height: 100%;
+  position:absolute;
 }
 
 .planetContainer {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  height: 500px;
-  margin-top: 10px;
+  height: 40%;
+  padding-left: 10%;
+  margin-top: 2%;
+
   }
-
-.planetVehcleGroup {
-  display: flex;
-  flex-direction: column;
-  margin-right: 50px;
-  width:140px;
+.row {
+  min-height: 6%
 }
 
- .vehicleList  {
-  display: flex;
-  margin-top: 50px;
-  flex-direction:column;
-  align-items: flex-start;
-  width : 150px;
+.navbar {
+ min-height: 30px;
 }
 
-.timeContainer {
-  display: flex;
-  margin-left: 20px;
-  flex-direction:row;
-  align-items: flex-start;
-  width : 200px;
-}
-
-.timeContainer #totalTime{
-  margin-left: 10px;
-}
-
-.disabled {
-  color: grey
-}
-
-.planet{
-  background-color: #f1f1f1;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-footer {
-  position: fixed;
-  background-color: #282c34;
-  left: 0;
-  bottom: 0px;
-  width: 100%;
-  height: 50px;
-  color: white;
-
-}
-
-button {
-  width:100Px;
+.vehicleList  {
+  margin-top: 20px;
 }
 
 .resultMessage {
-  margin-top: 100px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: row;
   font-size: 24px;
   font-weight: bold;
-  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 3%;
 }
 
-.timeInfo, .planetInfo {
-  padding-top: 5px;
-  display: flex;
-  flex-direction: row;
-  font-size: 20px;
-  font-weight: bold;
-  justify-content: center;
+.timeInfo, .planetInfo{
+  font-size: 18px;
 }
 
 .startButton{
-  margin-top: 100px;
+  margin-top: 5%;
 }
 
 .popup {
@@ -103,11 +42,11 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 50%;
-  height: 60%;
-  top: 120px;
-  left: 460px;
+  width: 65%;
+  height: 70%;
   z-index: 1;
+  margin-top: 6%;
+  margin-left: 18%;
   align-items: center;
   background-color: #CCC;
   border:2px solid grey;
